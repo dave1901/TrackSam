@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UTC Time:"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:layout_constraintBottom_toTopOf="@+id/materialTextView"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvUTCTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Started"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        app:layout_constraintBottom_toBottomOf="@+id/materialTextView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/materialTextView2"
+        app:layout_constraintTop_toTopOf="@+id/materialTextView2" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude:"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:layout_constraintBottom_toTopOf="@+id/materialTextView3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView2" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Started"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        app:layout_constraintBottom_toBottomOf="@+id/materialTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/materialTextView"
+        app:layout_constraintTop_toTopOf="@+id/materialTextView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude:"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:layout_constraintBottom_toTopOf="@+id/materialTextView4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Started"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        app:layout_constraintBottom_toBottomOf="@+id/materialTextView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/materialTextView3"
+        app:layout_constraintTop_toTopOf="@+id/materialTextView3" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altitude:"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:layout_constraintBottom_toTopOf="@+id/materialTextView5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView3" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvAlt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Started"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        app:layout_constraintBottom_toBottomOf="@+id/materialTextView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/materialTextView4"
+        app:layout_constraintTop_toTopOf="@+id/materialTextView4" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed:"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:layout_constraintBottom_toTopOf="@+id/bStart"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView4" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Started"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        app:layout_constraintBottom_toBottomOf="@+id/materialTextView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/materialTextView5"
+        app:layout_constraintTop_toTopOf="@+id/materialTextView5" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:enabled="false"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bStop"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:enabled="false"
+        android:text="Stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bStart" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.45" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
