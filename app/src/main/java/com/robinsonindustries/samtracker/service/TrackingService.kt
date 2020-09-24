@@ -134,8 +134,6 @@ class TrackingService: LifecycleService() {
 
     private fun sendToResultToServer(time:Long, lat:Double, long:Double, alt:Double, speed:Float) {
 
-
-
         val samBaseURL = "https://track-sam.sjfdean.com/3vQnc55cwWp412AcLmqM.php?Fi6OGvNOszmkkOLP4ZxT=lvPCjmSMFqS3kDnCITbg"
 
         val finalUrl = "$samBaseURL&time=$time&latitude=$lat&longitude=$long&altitude=$alt&speed=$speed"
@@ -151,7 +149,7 @@ class TrackingService: LifecycleService() {
                 d("dan", it.toString())
             })
 
-// Add the request to the RequestQueue.
+        // Add the request to the RequestQueue.
         queue.add(stringRequest)
     }
 

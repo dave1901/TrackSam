@@ -14,8 +14,8 @@ object Constants {
     const val ACTION_SHOW_MAIN_ACTIVITY = "ACTION_SHOW_MAIN_ACTIVITY"
 
     //Location
-    const val LOCATION_UPDATE_INTERVAL = 20000L
-    const val FASTEST_LOCATION_INTERVAL = 10000L
+    const val LOCATION_UPDATE_INTERVAL = 8000L
+    const val FASTEST_LOCATION_INTERVAL = 4000L
 
 
 }
