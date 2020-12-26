@@ -1,0 +1,140 @@
+/*Master Styles*/
+body {
+    font-family: Lato, sans-serif;
+    margin:0px;
+}
+
+.container {
+    display:grid;
+    grid-template-columns:1fr;
+}
+
+
+.nav-wrapper {
+    display:flex;
+    justify-content:space-between;
+    padding:38px;
+}
+
+.left-side {
+    display:flex;
+}
+
+/* Nav styles */
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height:22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom .5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color .5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+.active-nav-link {
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+    color: black !important;
+}
+
+/* Portfolio styles */
+
+.portfolio-items-wrapper {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative; /* required if we want postion abdolute elements inside it  */
+    text-align: center;
+}
+
+.portfolio-img-background {
+    height:300px;
+    width:100%;
+    background-size: cover;  /* when we don't have images of same size, make sure we are cropping images so they sit nice with each other;  */
+    background-position: center; /* ;  */
+    background-repeat: no-repeat; /*   */
+}
+
+.logo-wrapper img{
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper {
+    position: absolute; /*   */
+    top: 0; /* positioned at very top  */
+    left:50%;
+    transform: translate(-50%, 0%);
+    display: flex; /*  use flex box */
+    flex-direction: column; /*   */
+    justify-content: center; /* cenetered left to right  */
+    align-items: center; /*  centered top to bottom */
+    height: 100%; /* we want it to take up the full parent height  */
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: lightseagreen;
+}
+
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+
+
+
+/* about page styles */
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.profile-image-wrapper img {
+    width: 100%;
+}
+
+.profile-contents-wrapper {
+    padding: 30px;
+}
+
+.profile-contents-wrapper h1{
+    color: lightseagreen;
+}
+
+
+
