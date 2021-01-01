@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:300);
+
+body { font-family: "Nunito", sans-serif; margin:0px;}
+
+
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: lightgreen;
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+/* Main Body */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto;
+}
+
+#generatedWikiText {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    height:auto;
+    width:1400px;
+    margin:10px;
+    font-size:18pt;
+    padding:10px;
+}
+
+/* class for generated words */
+.word {
+    padding:5px;
+}
+
+.highlight {
+    background: lightgrey;
+    color:black;
+}
+
+.highlightIncorrect {
+    background: red;
+    color:black;
+}
+
+.highlightCorrect{
+    background: green;
+    color:black;
+}

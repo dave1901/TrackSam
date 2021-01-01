@@ -1,0 +1,125 @@
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .leftside {
+    left: 0;
+    background: #ffffff url(typing.jpg) no-repeat right top;
+    background-size: cover;
+    /* background-color: #5decfc; */
+  }
+  
+  /* Control the right side */
+  .rightside {
+    right: 0;
+    background: #ffffff url(books.jpg) no-repeat right top;
+    background-size: cover;
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+    width: 90%;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+
+  /* New stuff here */
+  @import url(https://fonts.googleapis.com/css?family=Nunito:300);
+
+  body { font-family: "Nunito", sans-serif; font-size: 24px; }
+  a    { text-decoration: none; }
+  p    { text-align: center; }
+  sup  { font-size: 36px; font-weight: 500; line-height: 55px; }
+  
+  .button
+  {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    color: rgb(0, 150, 50);
+  
+    font-size: 26px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    
+    margin: 5em auto;
+    
+    position: absolute; 
+    top:0; right:0; bottom:0; left:0;
+    
+    padding: 20px 0;
+    width: 400px;
+    height:30px;
+  
+    background: rgb(0, 150, 50);
+    border: 1px solidrgb(0, 150, 50);
+    color: #FFF;
+    overflow: hidden;
+    
+    transition: all 0.5s;
+  }
+  
+  .button:hover, .button:active 
+  {
+    text-decoration: none;
+    color: rgb(0, 150, 50);
+    border-color: #0C5;
+    background: #FFF;
+  }
+  
+  .button span 
+  {
+    display: inline-block;
+    position: relative;
+    padding-right: 0;
+    
+    transition: padding-right 0.5s;
+  }
+  
+  .button span:after 
+  {
+    content: ' ';  
+    position: absolute;
+    top: 0;
+    right: -18px;
+    opacity: 0;
+    width: 10px;
+    height: 10px;
+    margin-top: -10px;
+  
+    background: rgba(0, 0, 0, 0);
+    border: 3px solid #FFF;
+    border-top: none;
+    border-right: none;
+  
+    transition: opacity 0.5s, top 0.5s, right 0.5s;
+    transform: rotate(-45deg);
+  }
+  
+  .button:hover span, .button:active span 
+  {
+    padding-right: 30px;
+  }
+  
+  .button:hover span:after, .button:active span:after 
+  {
+    transition: opacity 0.5s, top 0.5s, right 0.5s;
+    opacity: 1;
+    border-color: #0C5;
+    right: 0;
+    top: 50%;
+  }
+
